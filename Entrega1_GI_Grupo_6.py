@@ -179,5 +179,5 @@ def build_and_export_model(instance, filename):
                 f.write(f"  {input_sum_str} = {output_sum_str};\n")
 
     print(f"Modelo exportado a {filename}")
-instance = generate_instance('small', seed=122)
+instance = generate_instance('large', seed=122)
 build_and_export_model(instance,"transbordo.lp")
